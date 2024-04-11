@@ -79,12 +79,17 @@ footer {
 
 .footer-social-media-icon {
   width: 1.5rem;
+  filter: invert(.5);
 }
 
-.footer-social-media-icon:hover,
 .footer-link:hover {
-  color: white;
-  transition: color 0.1s;
+  color: #fff;
+  transition: color .1s;
+}
+
+.footer-social-media-icon:hover {
+  filter: invert(1);
+  transition: filter .1s;
 }
 
 .footer-social-media-screen-reader-identifier {
